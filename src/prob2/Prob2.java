@@ -11,6 +11,27 @@ public class Prob2 {
 		int inputNumber = scanner.nextInt();
 
 		/* 여기에 구현 코드를 작성 합니다. */
+		if( inputNumber % 2 == 0 )
+		{
+			int sum = 0;
+			for( int i = 0; i <= inputNumber; )
+			{
+				sum += i;
+				i += 2;
+			}
+			System.out.println(sum);
+		}
+		else
+		{
+			int sum = 0;
+			for( int i = 1; i <= inputNumber; )
+			{
+				sum += i;
+				i+=2;
+			}
+			System.out.println("홀수"+sum);
+		}
+		
 		
 		scanner.close();
 	}

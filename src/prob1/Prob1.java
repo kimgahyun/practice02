@@ -8,8 +8,16 @@ public class Prob1 {
 		int sum = 0;
 
 		/* 여기에 코드를 작성합니다. */
-		
+		for( int i = 0; i < data.length; i++ )
+		{
+			if( data[i] % 3 == 0 )
+			{
+				count++;
+				sum+=data[i];
+			}
+		}
 		System.out.println( "주어진 배열에서 3의 배수의 개수=>" + count );
 		System.out.println( "주어진 배열에서 3의 배수의 합=>" + sum );
+
 	}
 }
